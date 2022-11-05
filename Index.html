@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+</head>
+<body onLoad="ValidateIPaddress()">
+    <script type="text/javascript">
+        function ValidateIPaddress() {
+        var ip = prompt("Введите IP для проверки")
+        if(/\b((([1-9])|([1-9][0-9])|(1[0-9][0-9])|(2[0-5][0-5]))\.(\d|([1-9][0-9])|(1[0-9][0-9])|(2[0-5][0-5]))\.(\d|([1-9][0-9])|(1[0-9][0-9])|(2[0-5][0-5]))\.((2[0-5][0-5])|(1[0-9][0-9])|([1-9][0-9])|\d))\b/.test(ip))
+        {
+            alert("Данный IP адрес полностью валиден.");
+        }
+        else
+        {
+            alert("Данный IP адрес не валиден.");
+        }
+        }
+    </script>
+</body>
+</html>
